@@ -18,7 +18,7 @@ To enable this sensor, add the following lines to your `configuration.yaml` file
 ```yaml
 sensor:
   - platform: fronius
-    resource: FRONIUS_URL
+    resource: http://FRONIUS_IP
     monitored_conditions:
     - sensor_type: inverter
 ```
@@ -94,7 +94,7 @@ a list of sensors that are to be integrated can be given like below.
 ```yaml
 sensor:
   - platform: fronius
-    resource: FRONIUS_IP_ADDRESS
+    resource: http://FRONIUS_IP
     monitored_conditions:
     - sensor_type: inverter
       device: 1
